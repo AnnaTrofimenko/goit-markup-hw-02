@@ -1,12 +1,16 @@
 :root {
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   --accent-color: #2196f3;
   --secondary-color: #757575;
+  --body-color: #212121;
+  --white-color: #fff;
 }
 body {
-  color: #212121;
+  color: var(--body-color);
   font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 /* ===  COMPONENTS  === */
 .list {
@@ -14,6 +18,7 @@ body {
 }
 .link {
   text-decoration: none;
+  color: var(--body-color);
 }
 .section-title {
   font-style: normal;
@@ -21,7 +26,6 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .button {
   cursor: pointer;
@@ -32,7 +36,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #000;
 }
 .logo > span {
@@ -45,10 +48,10 @@ body {
 .cont-link {
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .nav:hover,
 .nav:focus {
   color: var(--accent-color);
@@ -68,7 +71,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white-color);
 }
 .hero-button {
   font-style: normal;
@@ -79,23 +82,19 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #fff;
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 /* ======== end hero ========*/
 /* ======  advantages ====== */
 .adv-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .adv-text {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
 /* ===== end advantages ===== */
@@ -109,14 +108,12 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .staff-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
 /* ====== end our team ======= */
@@ -125,7 +122,7 @@ body {
   background-color: #2f303a;
 }
 .footer > .logo {
-  color: #fff;
+  color: var(--white-color);
 }
 .logo:hover {
   color: var(--accent-color);
@@ -136,12 +133,11 @@ body {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 .address-link {
-  color: #fff;
+  color: var(--white-color);
 }
 .mail-link,
 .tel-link {
@@ -157,13 +153,12 @@ body {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--body-color);
 }
 .button-portf:hover,
 .button-portf:focus {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--white-color);
 }
 .title-primary {
   font-family: var(--main-font);
@@ -172,14 +167,13 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--body-color);
 }
-.title-secondary {
+.text-portf {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--secondary-font);
 }
