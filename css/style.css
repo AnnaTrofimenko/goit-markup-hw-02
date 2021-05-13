@@ -19,7 +19,7 @@ body {
 }
 /* ===  COMPONENTS  === */
 .list {
-  list-style: none;
+  text-decoration: none;
 }
 .link {
   text-decoration: none;
