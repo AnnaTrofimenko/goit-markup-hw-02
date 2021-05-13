@@ -19,7 +19,7 @@ body {
 }
 /* ===  COMPONENTS  === */
 .list {
-  text-decoration: none;
+  list-style: none;
 }
 .link {
   text-decoration: none;
@@ -113,7 +113,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.adv-text {
+.text {
   line-height: 1.71;
   color: var(--secondary-color);
   display: block;
