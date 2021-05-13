@@ -5,12 +5,17 @@
   --secondary-color: #757575;
   --body-color: #212121;
   --white-color: #fff;
+  --background-color-footer-header: #2f303a;
+  --nav-footer-color: #ffffff99;
+  --black-color: #000;
 }
 body {
   color: var(--body-color);
   font-family: var(--main-font);
   font-size: 14px;
   letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: 400;
 }
 /* ===  COMPONENTS  === */
 .list {
@@ -20,8 +25,24 @@ body {
   text-decoration: none;
   color: var(--body-color);
 }
+
+.current {
+  color: var(--accent-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .section-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -36,7 +57,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #000;
+  color: var(--black-color);
 }
 .logo > span {
   color: var(--accent-color);
@@ -62,7 +83,7 @@ body {
 /* ===== end header =====*/
 /* ======== hero ========*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-color-footer-header);
 }
 .hero-title {
   font-weight: 900;
@@ -93,7 +114,7 @@ body {
   text-transform: uppercase;
 }
 .adv-text {
-  font-weight: 400;
+  /* display: none;  */
   line-height: 1.71;
   color: var(--secondary-color);
 }
@@ -110,7 +131,6 @@ body {
   text-align: center;
 }
 .staff-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -119,7 +139,7 @@ body {
 /* ====== end our team ======= */
 /* ======= footer ========= */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-color-footer-header);
 }
 .footer > .logo {
   color: var(--white-color);
@@ -130,10 +150,8 @@ body {
 .address-link,
 .mail-link,
 .tel-link {
-  font-family: var(--main-font);
   font-style: normal;
-  font-weight: 400;
-
+  font-family: var(--main-font);
   line-height: 1.71;
 }
 .address-link {
@@ -141,14 +159,13 @@ body {
 }
 .mail-link,
 .tel-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--nav-footer-color);
 }
 /* ====== end footer ======= */
 
 /* ==portfolio== */
 .button-portf {
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -162,7 +179,6 @@ body {
 }
 .title-primary {
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -171,8 +187,6 @@ body {
 }
 .text-portf {
   font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-font);
