@@ -114,7 +114,6 @@ body {
   text-transform: uppercase;
 }
 .adv-text {
-  display: block;
   line-height: 1.71;
   color: var(--secondary-color);
 }
